@@ -13,18 +13,25 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+<<<<<<< HEAD
 
 import { HomeComponent } from './components/home/home.component';
+=======
+>>>>>>> parent of f0fdc03 (added home-component)
 
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
+<<<<<<< HEAD
     AppComponent,
     home-component
     HomeComponent
     SearchBarComponent
     main
+=======
+    AppComponent
+>>>>>>> parent of f0fdc03 (added home-component)
   ],
   imports: [
     BrowserModule,
