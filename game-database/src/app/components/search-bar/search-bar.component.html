@@ -1,8 +1,8 @@
 <div class="search-container">
-  <form action="" class="search-form">
-    <span class="logo" routeLink="/">
+  <span class="logo" routeLink="/">
     GDB
     </span>
+  <form class="search-form" #form="ngForm"(ngSubmit)="onSubmit(form)">
     <input
     type="text" 
     class="search-bar"
