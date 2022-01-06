@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
-<<<<<<< HEAD
+
 const routes: Routes = [
   {
     path: '',
@@ -12,9 +13,6 @@ const routes: Routes = [
     component: HomeComponent,
   }
 ];
-=======
-const routes: Routes = [];
->>>>>>> parent of f0fdc03 (added home-component)
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
