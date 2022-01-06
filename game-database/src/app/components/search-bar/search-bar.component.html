@@ -1,0 +1,15 @@
+<div class="search-container">
+  <span class="logo" routeLink="/">
+    GDB
+    </span>
+  <form class="search-form" #form="ngForm"(ngSubmit)="onSubmit(form)">
+    <input
+    type="text" 
+    class="search-bar"
+    name='search'
+    ngModel
+    placeholder='Search games data'
+    />
+    <button class="search-button">Search</button>
+  </form>
+</div>
