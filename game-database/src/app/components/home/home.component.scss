@@ -1,4 +1,4 @@
-.filters{
+.filters {
   max-width: 10rem;
   margin-top: 1em;
   padding-left: 1em;
@@ -11,50 +11,75 @@
   .mat-select-value,
   .mat-select-arrow,
   .mat-form-field-hide-placeholder .mat-select-placeholder,
-  .mat-form-field-appearance-legacy .mat-form-field-label{
+  .mat-form-field-appearance-legacy .mat-form-field-label {
     color: wheat !important;
     opacity: 1;
   }
-  
+
   .mat-form-field-infix {
     color: wheat !important;
     border-top: none;
-    padding-left: 1rem  !important;
+    padding-left: 1rem !important;
   }
-  .mat-form-field-appearance-legacy .mat-form-field-label{
+  .mat-form-field-appearance-legacy .mat-form-field-label {
     padding-left: 1rem;
   }
-  
+
   .mat-form-field-appearance-legacy .mat-form-field-outline {
     background-color: wheat !important;
   }
 }
 .games {
-display: flex;
-background-color: red;
-max-width: 95%;
-margin: 1.5% auto;
+  display: flex;
+  background-color: red;
+  max-width: 95%;
+  margin: auto;
+  height: 40em;
 }
 
-// .game {
-//  width: 3rem;
-//  margin: 1em;
-//  background-color: rosybrown;
-// }
+.game {
+  width: 20em;
+  height: 35em;
+  margin: 0.7em;
+  overflow: hidden;
+  border-radius: 1em;
+  background-color: rosybrown;
 
-.game-thumb-container {
-  width: 300px;
-  height: 500px;
-  margin: 0;
-  // background-image: url(img/Mario.jpg);
-}
+  &:hover {
+    transform: translateY(-0.5em);
+  }
 
-.game-description {
-  height: 500px;
-  width: 500px;
-}
-.game-platforms {
-  width: 550px;
-  height: 600px;
-  // background-image: url(img/games.jpg);
+  &-thumb-container {
+    width: 3em;
+    height: 5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/Mario.jpg);
+  }
+
+  &-description {
+    height: 5em;
+    width: 5em;
+  }
+  &-platforms {
+    width: 5em;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/games.jpg);
+  }
+  &-name {
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+  }
+  &-platforms {
+    display: flex;
+    flex-direction: column;
+  }
+  &-platform {
+    width: 1em;
+    margin-right: .5em auto;
+  }
 }
