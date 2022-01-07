@@ -1,0 +1,60 @@
+.filters{
+  max-width: 10rem;
+  margin-top: 1em;
+  padding-left: 1em;
+}
+
+::ng-deep {
+  .mat-form-field-infix {
+    background-color: hsl(310, 52%, 41%);
+  }
+  .mat-select-value,
+  .mat-select-arrow,
+  .mat-form-field-hide-placeholder .mat-select-placeholder,
+  .mat-form-field-appearance-legacy .mat-form-field-label{
+    color: wheat !important;
+    opacity: 1;
+  }
+  
+  .mat-form-field-infix {
+    color: wheat !important;
+    border-top: none;
+    padding-left: 1rem  !important;
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-label{
+    padding-left: 1rem;
+  }
+  
+  .mat-form-field-appearance-legacy .mat-form-field-outline {
+    background-color: wheat !important;
+  }
+}
+.games {
+display: flex;
+background-color: red;
+max-width: 95%;
+margin: 1.5% auto;
+}
+
+// .game {
+//  width: 3rem;
+//  margin: 1em;
+//  background-color: rosybrown;
+// }
+
+.game-thumb-container {
+  width: 300px;
+  height: 500px;
+  margin: 0;
+  // background-image: url(img/Mario.jpg);
+}
+
+.game-description {
+  height: 500px;
+  width: 500px;
+}
+.game-platforms {
+  width: 550px;
+  height: 600px;
+  // background-image: url(img/games.jpg);
+}
