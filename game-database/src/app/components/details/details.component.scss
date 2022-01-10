@@ -1,4 +1,4 @@
-./* Box sizing rules */
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -120,9 +120,9 @@ select {
         filter: blur(3px);
       }
 
-      &-content {
+      // &-content {
         
-      }
+      // }
       
       &-header{
         &-title{
