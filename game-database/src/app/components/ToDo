@@ -13,3 +13,14 @@ home
 add shadow effect to game element
 fix the font 
 fix the image
+====
+interceptors
+====
+fix api key error
+try to make platform.slug works
+  <!-- <img
+             *ngFor="let gamePlatform of game.parent_platforms"            
+              class="game-platform"
+              src="assets/images/platforms/{{ gamePlatform.platform.slug }}.svg"
+              alt="{{ gamePlatform.platform.slug }}"
+            /> -->
