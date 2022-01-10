@@ -30,3 +30,4 @@ add (click)="openGameDetails(game.id) to div.game in home.component.html
 detail
 ===
 position gauge in better place
+align text in game content
