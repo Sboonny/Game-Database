@@ -9,6 +9,7 @@ import { APIResponse, Game } from '../models';
   providedIn: 'root'
 })
 export class HttpService {
+  [x: string]: any;
 
   constructor(private http: HttpClient) { }
 
