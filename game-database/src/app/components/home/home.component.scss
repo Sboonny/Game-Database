@@ -31,7 +31,6 @@
 }
 .games {
   display: flex;
-  background-color: red;
   max-width: 95%;
   margin: auto;
   height: 40em;
@@ -43,7 +42,6 @@
   margin: 0.7em;
   overflow: hidden;
   border-radius: 1em;
-  background-color: rosybrown;
 
   &:hover {
     transform: translateY(-0.5em);
@@ -55,7 +53,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-image: url(img/Mario.jpg);
   }
 
   &-description {
@@ -67,7 +64,6 @@
     height: 6em;
     display: flex;
     flex-direction: column;
-    background-image: url(img/games.jpg);
   }
   &-name {
    white-space: nowrap;
