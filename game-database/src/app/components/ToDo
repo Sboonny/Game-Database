@@ -26,3 +26,7 @@ add (click)="openGameDetails(game.id) to div.game in home.component.html
               src="assets/images/platforms/{{ gamePlatform.platform.slug }}.svg"
               alt="{{ gamePlatform.platform.slug }}"
             /> -->
+===
+detail
+===
+position gauge in better place
