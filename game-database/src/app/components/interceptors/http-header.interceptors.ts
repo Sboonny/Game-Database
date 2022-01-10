@@ -9,7 +9,7 @@ constructor() {}
 intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     req = req.clone({
       setHeaders: {
-        'x-rapidapi-key': 'esGbwrm390mshS2BCl0RALxQRtZTp1W7sFMjsnyJlJzDXVkW0H',
+        'x-rapidapi-key': 'e092db3974e548808e8cd29d1438cad5',
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com'
       },
       setParams: {
