@@ -18,6 +18,8 @@ interceptors
 ====
 fix api key error
 try to make platform.slug works
+add mat-select (selectionChange)="searchGames(sort)"
+add (click)="openGameDetails(game.id) to div.game in home.component.html
   <!-- <img
              *ngFor="let gamePlatform of game.parent_platforms"            
               class="game-platform"
