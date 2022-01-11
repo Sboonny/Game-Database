@@ -18,6 +18,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { HttpHeadersInterceptor } from './components/interceptors/http-header.interceptors';
 import { HttpErrorsInterceptor } from './components/interceptors/http-error.interceptors';
 import { DetailsComponent } from './components/details/details.component';
+import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DetailsComponent } from './components/details/details.component';
     HomeComponent,
     SearchBarComponent,
     DetailsComponent,
+    GameTabsComponent,
   ],
   imports: [
     BrowserModule,
