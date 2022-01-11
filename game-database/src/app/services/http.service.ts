@@ -22,15 +22,15 @@ export class HttpService {
     if (search) {
       params = new HttpParams().set('ordering', ordering).set('search', search);
     }
-    return  http.get<APIResponse<Game>>(`${env.BASE_URL}/games`, {
+    return this.http.get<APIResponse<Game>>(`${env.BASE_URL}/games`, {
       params: params
     }
     )
   }
   getGameDetails(id: string): Observable<Game> {
-    const gameInfoRequest =  http.get(`${env.BASE_URL}/games/${id}`)
-    const gameTrailersRequest =  http.get(`${env.BASE_URL}/games/${id}/movies`)
-    const gameScreenshotsRequest =  http.get(`${env.BASE_URL}/games/${id}/screenshots`)
+    const gameInfoRequest = this.http.get(`${env.BASE_URL}/games/${id}`)
+    const gameTrailersRequest = this.http.get(`${env.BASE_URL}/games/${id}/movies`)
+    const gameScreenshotsRequest = this.http.get(`${env.BASE_URL}/games/${id}/screenshots`)
 
     return forkJoin({
       gameInfoRequest,
