@@ -30,8 +30,9 @@ export class DetailsComponent implements OnInit {
   }
 
   getGameDetails(id: string): void {
-    this.gameSub = this.httpService['getGameDetails'](id)
-    .subcribe((gameResp: Game) => {
+    this.gameSub = this.httpService
+    .getGameDetails(id)
+    .subscribe((gameResp: Game) => {
       this.game = gameResp
 
       setTimeout(() => {
