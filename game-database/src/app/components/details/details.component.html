@@ -1,18 +1,19 @@
 <section class="details"> 
   <header class="game-banner">
-    <img src="https://media.rawg.io/media/games/84d/84da2ac3fdfc6507807a1808595afb12" alt="background image" class="game-banner-image">
+    <img src="{{ game.background_image }}" alt="background image" class="game-banner-image">
   </header>
   <div class="game-content">
     <div class="details-wrapper">
       <div class="game-header">
-        <h1 class='game-header-title'>Game Name</h1>
-        <span class="game-release-date">Release: 1.2.2002</span>
+        <h1 class='game-header-title'>{{ game.name }}</h1>
+        <span class="game-release-date">Release: {{ game.released | date  }}</span>
         <p class="game-header-genre">
-          <span>RPG</span>
+          <span *ngFor="let genre of game.genres; let last = last"
+            >{{ genre.name }}<span *ngIf="!last">,</span></span>
         </p>
         <div class="game-gauge">
           <mwl-gauge class='two' [max]='100' [dialStartAngle]="180" [dialEndAngle]='0' [value]='gameRating' [animated]='true' [color]= 'getColor' [animationDuration]="2"></mwl-gauge>
-          <a href="#" class="game-gauge-label" target='_blank'>Metacritic</a>
+          <a href="{{ game.metacritic_url }}" class="game-gauge-label" target='_blank'>Metacritic</a>
         </div>
       </div>
       <!-- here are the tabs -->
