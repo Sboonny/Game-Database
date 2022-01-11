@@ -22,35 +22,35 @@ export class HomeComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe((params: Params) => {
+     activatedRoute.params.subscribe((params: Params) => {
       if (params['game-search']) {
-        this.searchGames('metacrit', params['game-search'])
+         searchGames('metacrit', params['game-search'])
       } else {
-        this.searchGames('metacrit')
+         searchGames('metacrit')
       }
     })
   }
 
   searchGames(sort: string, search?: string):void {
-   this.gameSub = this.httpService
+    gameSub =  httpService
       .getGameList(sort, search)
       .subscribe((gameList: APIResponse<Game>) => {
-        this.games = gameList.results
+         games = gameList.results
         console.log(gameList)
       })
   }
 
   openGameDetails(id: string): void {
-    this.router.navigate(['details', id])
+     router.navigate(['details', id])
   }
 
   ngOnDestory(): void {
-    if(this.gameSub) {
-      this.gameSub.unsubscribe();
+    if( gameSub) {
+       gameSub.unsubscribe();
     }
 
-    if (this.routeSub) {
-      this.routeSub.unsubscribe()
+    if ( routeSub) {
+       routeSub.unsubscribe()
     }
   }
 }
