@@ -1,1 +1,45 @@
-<p>game-tabs works!</p>
+<div class="game-tabs">
+  <mat-tab-group mat-align-tabs="start" backgroundColor="primary">
+   <mat-tab label="About">
+    <p class="game-tabs-par">
+      Platforms:
+      <span>PC</span>
+      <p class="game-tabs-par">
+        Publishers:
+        <span>Konami</span>
+      </p>
+      <p class="game-tabs-par">
+        Website:
+        <a href="#" target='_blank' class='game-tabs-link'>http://</a>
+      </p>
+    </p>
+    <div class="game-description">Some Description</div>
+    <p class='game-tabs-votes'>
+      <span>
+        <mat-icon class='game-votes-up'>thumb_up</mat-icon>
+        <span class='game-votes-count'>55</span>
+      </span>
+      <span>
+        <mat-icon class='game-votes-down'>thumb_down</mat-icon>
+        <span class='game-votes-count'>14</span>
+      </span>
+    </p>
+   </mat-tab>
+
+    <mat-tab label="screenshots">
+      <img *ngFor="let screenshot of game.screenshots" src="{{ screenshot.image }}" alt="screenshot" class='game-screenshot'>
+    </mat-tab>
+
+    <mat-tab label="Trailers" *ngIf="game.trailers?.length">
+      <video
+        class="game-trailer"
+        controls
+        *ngFor="let trailer of game.trailers"
+      >
+        <source src="{{ trailer.data?.max }}" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </mat-tab>
+    
+  </mat-tab-group>
+</div>
