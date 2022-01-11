@@ -4,18 +4,21 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class HttpHeadersInterceptor implements HttpInterceptor {
-constructor() {}
+  constructor() {}
 
-intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+  intercept(
+    req: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
     req = req.clone({
       setHeaders: {
-        'x-rapidapi-key': 'e092db3974e548808e8cd29d1438cad5',
-        'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com'
+        'x-rapidapi-key': 'esGbwrm390mshS2BCl0RALxQRtZTp1W7sFMjsnyJlJzDXVkW0H',
+        'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
       },
       setParams: {
-        key: 'e40e743af2c94b0c916a8aa618fb4473'
+        key: '9206f041390f406b92ae8b0bb1e2833a',
       }
-    })
-    return next.handle(req)
-}
+    });
+    return next.handle(req);
+  }
 }
