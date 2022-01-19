@@ -1,8 +1,9 @@
 .search {
   &-container {
+    font-family: 'Nunito';
     width: 100%;
     height: 3rem;
-    background-color: hsl(271, 51%, 55%);
+    background-color: hsl(355, 67%, 38%);
     display: flex;
     align-items: center;  
     font-size: 16px;
@@ -15,26 +16,35 @@
     outline: none;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+    &:focus::placeholder {
+      color: transparent;
+    }
   }
   &-button {
-    font-weight: 500;
+    font-weight: 700;
     padding: auto;
     border: none;
     border-top-right-radius: 5em;
     border-bottom-right-radius: 5em;
-    background-color: wheat;
+    background-color: hsl(37, 72%, 62%);
     cursor: pointer;
     transition-duration: .3s;
+    box-shadow: 0 .5px 1.5px hsl(37, 52%, 42%);
+    color: hsl(355, 67%, 38%);
 
     &:hover{
-      background-color: burlywood;
+      background-color: hsl(37, 82%, 42%);
+    }
+    &:active{
+      transform: translateY(.3px);
     }
   }
 }
 
 .logo{
   margin-left: 1em;
-  font-weight: 600;
+  font-weight: 700;
   margin-right: auto;
-  color: yellow;
+  color: hsl(37, 72%, 82%);
+  text-shadow:  1px 1px hsl(37, 52%, 32%);
 }

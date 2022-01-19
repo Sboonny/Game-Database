@@ -1,11 +1,18 @@
+=====
+bg-color
+====
+    background-color: hsl(37, 72%, 62%);
+    background-color: hsl(355, 67%, 38%);
+====
+fonts
+====
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Nunito:wght@300;400;500;700;900&display=swap');
+====
 searchbar
 ======
 style the searchbar 
-add a shadow to the button
 add icons to the search bar
 pick a font
-add hover effect to the button
-remove placeholder and make search bar empty when focused on it
 
 =====
 home
